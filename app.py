@@ -44,7 +44,7 @@ st.title("과학 서술형 평가")
 show_pages(
     [
         Page("app.py", "서술형 평가", ":100:"),
-        Page("app2.py", "교사용 대시보드", ":bookmark_tabs:"),
+        Page("app2.py", "교사용 대시보드", ":bookmark_tabs:")
     ]
 )
 
