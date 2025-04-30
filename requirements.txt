@@ -3,3 +3,4 @@ openai>=1.0.0
 mysql-connector-python>=8.0.0
 pandas>=1.3.0
 st_pages
+streamlit-extras>=0.1.0
