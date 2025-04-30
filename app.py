@@ -36,11 +36,15 @@ from mysql.connector import Error
 # pip install st_pages
 from st_pages import Page, show_pages
 
+# 페이지 설정
+st.set_page_config(page_title="서술형 평가", layout="centered")
+st.title("과학 서술형 평가")
+
 # 페이지 목록 등록
 show_pages(
     [
-        Page("app.py", "서술형 평가"),
-        Page("app2.py", "교사용 대시보드"),
+        Page("app.py", "서술형 평가", ":100:"),
+        Page("app2.py", "교사용 대시보드", ":bookmark_tabs:"),
     ]
 )
 
@@ -63,9 +67,6 @@ def get_mysql_connection():
         st.error(f"MySQL 연결 오류: {e}")
         return None
 
-# 페이지 설정
-st.set_page_config(page_title="서술형 평가", layout="centered")
-st.title("과학 서술형 평가")
 
 # -----------------------------------------
 # 사용자 정의 영역: 문항, 그림, 예시 답안, 채점 기준
